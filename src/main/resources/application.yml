@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: admin
+    password: admin
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+        format_sql: true
