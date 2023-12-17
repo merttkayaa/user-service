@@ -1,6 +1,6 @@
 package com.grpc.userservice.dto;
 
-import com.grpc.userservice.web.controller.dto.PaymentInfo;
+import com.grpc.userservice.web.dto.PaymentInfo;
 import lombok.Getter;
 import lombok.Setter;
 @Getter

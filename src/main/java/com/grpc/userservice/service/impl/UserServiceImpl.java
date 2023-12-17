@@ -1,15 +1,15 @@
 package com.grpc.userservice.service.impl;
 
-import com.grpc.userservice.data.service.UserDbService;
+import com.grpc.userservice.data.service.UserDataService;
 import com.grpc.userservice.dto.UserDto;
 import com.grpc.userservice.service.UserService;
-import com.grpc.userservice.web.controller.dto.CreateUser;
+import com.grpc.userservice.web.dto.CreateUser;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImpl implements UserService {
-    private final UserDbService dbService;
-    public UserServiceImpl(UserDbService dbService){
+    private final UserDataService dbService;
+    public UserServiceImpl(UserDataService dbService){
         this.dbService = dbService;
     }
     @Override

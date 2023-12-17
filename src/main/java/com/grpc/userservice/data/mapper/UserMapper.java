@@ -2,7 +2,7 @@ package com.grpc.userservice.data.mapper;
 
 import com.grpc.userservice.data.entity.User;
 import com.grpc.userservice.dto.UserDto;
-import com.grpc.userservice.web.controller.dto.CreateUser;
+import com.grpc.userservice.web.dto.CreateUser;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

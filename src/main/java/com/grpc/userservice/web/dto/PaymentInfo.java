@@ -1,4 +1,4 @@
-package com.grpc.userservice.web.controller.dto;
+package com.grpc.userservice.web.dto;
 
 import lombok.Getter;
 import lombok.Setter;
