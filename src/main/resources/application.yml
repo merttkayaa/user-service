@@ -1,6 +1,7 @@
 spring:
   application:
     name: user-service
+
   datasource:
     url: jdbc:oracle:thin:@localhost:1521:orcl
     username: admin
@@ -17,3 +18,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.Oracle12cDialect
         format_sql: true
+grpc:
+  server:
+    host: "localhost"
+    port: 9001

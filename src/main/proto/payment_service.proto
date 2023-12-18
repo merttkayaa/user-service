@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package grpc.userservice;
+
+service PaymentService {
+  rpc Pay(CreatePayment) returns (PaymentDto);
+}
+
+message CreatePayment {
+  string firstName = 1;
+  string lastName = 2;
+  string cardNumber = 3;
+  string cvv = 4;
+  string expireDate = 5;
+  string amount = 6;
+  string bankId = 7;
+  int64 userId = 8;
+  string paymentMethod = 9;
+}
+
+message PaymentDto {
+  string response = 1;
+  string message = 2;
+  string orderId = 3;
+}
+
