@@ -1,6 +1,6 @@
-package com.grpc.userservice.dto;
+package com.grpc.paymentservice.dto;
 
-import com.grpc.userservice.web.dto.PaymentInfo;
+import com.grpc.paymentservice.web.dto.PaymentInfo;
 import lombok.Getter;
 import lombok.Setter;
 @Getter

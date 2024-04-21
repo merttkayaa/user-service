@@ -1,4 +1,4 @@
-package com.grpc.userservice.data.entity;
+package com.grpc.paymentservice.data.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

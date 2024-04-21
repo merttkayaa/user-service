@@ -1,4 +1,4 @@
-package com.grpc.userservice;
+package com.grpc.paymentservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

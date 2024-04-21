@@ -1,11 +1,11 @@
-package com.grpc.userservice.web.controller;
+package com.grpc.paymentservice.web.controller;
 
 
-import com.grpc.userservice.dto.UserDto;
-import com.grpc.userservice.service.UserService;
-import com.grpc.userservice.web.dto.CreateUser;
-import grpc.userservice.PaymentServiceOuterClass;
-import lombok.SneakyThrows;
+import com.grpc.paymentservice.dto.UserDto;
+import com.grpc.paymentservice.service.UserService;
+import com.grpc.paymentservice.web.dto.CreateUser;
+import com.grpc.paymentservice.web.dto.PaymentRequest;
+import grpc.paymentservice.PaymentServiceOuterClass;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,9 +29,10 @@ public class UserController {
 
 
     @PostMapping("/pay")
-    public ResponseEntity<PaymentServiceOuterClass.PaymentDto>  pay(@RequestBody PaymentServiceOuterClass.CreatePayment createPayment) throws InterruptedException {
+    public ResponseEntity<PaymentServiceOuterClass.PaymentDto>  pay(@RequestBody PaymentRequest request) throws InterruptedException {
         //TODO Exception signaturedan kurtul!!!
-        return  ResponseEntity.status(HttpStatus.CREATED).body(userService.pay(createPayment));
+
+        return  ResponseEntity.status(HttpStatus.CREATED).body(userService.pay(request));
     }
 
 }

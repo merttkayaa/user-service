@@ -1,6 +1,6 @@
-package com.grpc.userservice.data.config;
+package com.grpc.paymentservice.data.config;
 
-import com.grpc.userservice.data.mapper.UserMapper;
+import com.grpc.paymentservice.data.mapper.UserMapper;
 import org.mapstruct.factory.Mappers;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,6 +1,7 @@
 syntax = "proto3";
 
-package grpc.userservice;
+//package grpc.userservice;
+package grpc.paymentservice;
 
 service PaymentService {
   rpc Pay(CreatePayment) returns (PaymentDto);

@@ -1,10 +1,10 @@
-package com.grpc.userservice.data.service;
+package com.grpc.paymentservice.data.service;
 
-import com.grpc.userservice.data.repository.UserRepository;
-import com.grpc.userservice.data.entity.User;
-import com.grpc.userservice.data.mapper.UserMapper;
-import com.grpc.userservice.dto.UserDto;
-import com.grpc.userservice.web.dto.CreateUser;
+import com.grpc.paymentservice.data.repository.UserRepository;
+import com.grpc.paymentservice.data.entity.User;
+import com.grpc.paymentservice.data.mapper.UserMapper;
+import com.grpc.paymentservice.dto.UserDto;
+import com.grpc.paymentservice.web.dto.CreateUser;
 import org.springframework.stereotype.Service;
 
 @Service

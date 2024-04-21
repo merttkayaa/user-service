@@ -1,4 +1,4 @@
-package com.grpc.userservice.web.dto;
+package com.grpc.paymentservice.web.dto;
 
 import lombok.Getter;
 import lombok.Setter;

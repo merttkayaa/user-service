@@ -1,24 +1,37 @@
 spring:
   application:
-    name: user-service
+    name: user
 
   datasource:
-    url: jdbc:oracle:thin:@localhost:1521:orcl
-    username: admin
-    password: admin
-    driver-class-name: oracle.jdbc.OracleDriver
-
+    url: jdbc:postgresql://localhost:5432/user_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+#    url: jdbc:oracle:thin:@localhost:1521:orcl
+#    username: admin
+#    password: admin
+#    driver-class-name: oracle.jdbc.OracleDriver
   jpa:
     show-sql: true
-    hibernate:
-      ddl-auto: none
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.Oracle12cDialect
         format_sql: true
+    hibernate:
+      ddl-auto: none
+
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: none
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.Oracle12cDialect
+#        format_sql: true
 grpc:
   server:
     host: "localhost"
-    port: 9001
+    port: 9091
+server:
+  port: 8082
